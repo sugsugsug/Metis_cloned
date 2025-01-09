@@ -35,8 +35,8 @@ if [ "${MODEL_NAME}" == "GPT" ]; then
               "
 fi
 
-HOST_FILE_PATH="${HOME_DIR}/hostfile"
-CLUSTER_INFO_FILE_PATH="${HOME_DIR}/clusterfile.json"
+HOST_FILE_PATH="${HOME_DIR}/node_config/hostfile"
+CLUSTER_INFO_FILE_PATH="${HOME_DIR}/node_config/clusterfile.json"
 
 cluster_options="
                   --hostfile_path=${HOST_FILE_PATH}
@@ -64,6 +64,7 @@ hetspeed_options="
 run_cmd="python3 ../cost_het_cluster.py ${model_options} ${model_specific_options} ${cluster_options} ${hetspeed_options} ${env_options}
          &> ${LOG_PATH}/${MODEL_NAME}_${MODEL_SIZE}_${current_time}.log"
 
+#echo ${model_specific_options}
 echo ${run_cmd}
 eval ${run_cmd}
 set +x

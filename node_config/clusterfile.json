@@ -1,0 +1,26 @@
+{
+  "b7": {
+    "instance_type": "R3090",
+    "inter_bandwidth": 312500000.0,
+    "intra_bandwidth": 5312500000.0,
+    "memory": 24
+  },
+  "c4": {
+    "instance_type": "R2080",
+    "inter_bandwidth": 312500000.0,
+    "intra_bandwidth": 5312500000.0,
+    "memory": 8
+  },
+  "c5": {
+    "instance_type": "R2080",
+    "inter_bandwidth": 312500000.0,
+    "intra_bandwidth": 5312500000.0,
+    "memory": 8
+  },
+  "c6": {
+    "instance_type": "R2080",
+    "inter_bandwidth": 312500000.0,
+    "intra_bandwidth": 5312500000.0,
+    "memory": 8
+  }
+}

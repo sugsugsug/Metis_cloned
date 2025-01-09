@@ -23,6 +23,7 @@ def _add_model_args(parser: argparse.ArgumentParser) -> argparse.ArgumentParser:
 def _add_gpt_model_args(parser: argparse.ArgumentParser) -> argparse.ArgumentParser:
     parser.add_argument('--hidden_size', type=int)
     parser.add_argument('--sequence_length', type=int)
+    parser.add_argument('--seq', type=int)
     parser.add_argument('--vocab_size', type=int)
     parser.add_argument('--attention_head_size', type=int)
     return parser

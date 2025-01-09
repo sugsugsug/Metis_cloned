@@ -51,6 +51,8 @@ def cost_het_cluster(args: argparse.Namespace, gpu_cluster: GPUCluster, profile_
 
 if __name__ == '__main__':
     args = parse_args()
+    print(args.sequence_length,'hey')
+    print(args.model_name,'hey')
     gpu_cluster = GPUCluster(hostfile_path=args.hostfile_path, clusterfile_path=args.clusterfile_path)
 
     data_loader = ProfileDataLoader(args.profile_data_path)
